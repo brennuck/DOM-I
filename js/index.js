@@ -63,3 +63,24 @@ header1.textContent = siteContent["cta"]["h1"]
 
 const button1 = document.querySelector("button");
 button1.textContent = siteContent["cta"]["button"];
+
+// h4
+const headers = document.querySelectorAll("h4");
+headers[0].textContent = siteContent["main-content"]["features-h4"];
+headers[1].textContent = siteContent["main-content"]["about-h4"];
+headers[2].textContent = siteContent["main-content"]["services-h4"];
+headers[3].textContent = siteContent["main-content"]["product-h4"];
+headers[4].textContent = siteContent["main-content"]["vision-h4"];
+headers[5].textContent = siteContent["contact"]["contact-h4"];
+
+// paragraphs
+const para = document.querySelectorAll("p");
+para[0].textContent = siteContent["main-content"]["features-content"];
+para[1].textContent = siteContent["main-content"]["about-content"];
+para[2].textContent = siteContent["main-content"]["services-content"];
+para[3].textContent = siteContent["main-content"]["product-content"];
+para[4].textContent = siteContent["main-content"]["vision-content"];
+para[5].textContent = siteContent["contact"]["address"];
+para[6].textContent = siteContent["contact"]["email"];
+para[7].textContent = siteContent["contact"]["phone"];
+para[8].textContent = siteContent["footer"]["copyright"];
