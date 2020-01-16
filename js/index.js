@@ -40,3 +40,72 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// images
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// nav
+const navBar = document.querySelectorAll('a');
+navBar[0].textContent = siteContent["nav"]["nav-item-1"];
+navBar[1].textContent = siteContent["nav"]["nav-item-2"];
+navBar[2].textContent = siteContent["nav"]["nav-item-3"];
+navBar[3].textContent = siteContent["nav"]["nav-item-4"];
+navBar[4].textContent = siteContent["nav"]["nav-item-5"];
+navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// cta
+const header1 = document.querySelector("h1");
+header1.textContent = siteContent["cta"]["h1"]
+
+const button1 = document.querySelector("button");
+button1.textContent = siteContent["cta"]["button"];
+
+// h4
+const headers = document.querySelectorAll("h4");
+headers[0].textContent = siteContent["main-content"]["features-h4"];
+headers[1].textContent = siteContent["main-content"]["about-h4"];
+headers[2].textContent = siteContent["main-content"]["services-h4"];
+headers[3].textContent = siteContent["main-content"]["product-h4"];
+headers[4].textContent = siteContent["main-content"]["vision-h4"];
+headers[5].textContent = siteContent["contact"]["contact-h4"];
+
+// paragraphs
+const para = document.querySelectorAll("p");
+para[0].textContent = siteContent["main-content"]["features-content"];
+para[1].textContent = siteContent["main-content"]["about-content"];
+para[2].textContent = siteContent["main-content"]["services-content"];
+para[3].textContent = siteContent["main-content"]["product-content"];
+para[4].textContent = siteContent["main-content"]["vision-content"];
+para[5].textContent = siteContent["contact"]["address"];
+para[6].textContent = siteContent["contact"]["email"];
+para[7].textContent = siteContent["contact"]["phone"];
+para[8].textContent = siteContent["footer"]["copyright"];
+
+// change color of nav
+navBar.forEach(element => {
+  element.style.color = "green";
+})
+
+// 2 new items
+const login = document.createElement("a");
+login.textContent = "Login";
+const parentElement = document.querySelector('a');
+parentElement.append(login);
+
+const signOut = document.createElement("a");
+signOut.textContent = "Sign Out";
+const Yada = document.querySelector('a');
+Yada.prepend(signOut);
+
+// stretch
+para.forEach(element => {
+  element.style.color = "blue";
+});
+
+headers.forEach(element => {
+  element.style.color = "pink";
+});
