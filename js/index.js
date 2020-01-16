@@ -89,3 +89,14 @@ para[8].textContent = siteContent["footer"]["copyright"];
 navBar.forEach(element => {
   element.style.color = "green";
 })
+
+// 2 new items
+const login = document.createElement("a");
+login.textContent = "Login";
+const parentElement = document.querySelector('a');
+parentElement.append(login);
+
+const signOut = document.createElement("a");
+signOut.textContent = "Sign Out";
+const Yada = document.querySelector('a');
+Yada.prepend(signOut);
