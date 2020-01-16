@@ -100,3 +100,12 @@ const signOut = document.createElement("a");
 signOut.textContent = "Sign Out";
 const Yada = document.querySelector('a');
 Yada.prepend(signOut);
+
+// stretch
+para.forEach(element => {
+  element.style.color = "blue";
+});
+
+headers.forEach(element => {
+  element.style.color = "pink";
+});
