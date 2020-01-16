@@ -56,3 +56,10 @@ navBar[2].textContent = siteContent["nav"]["nav-item-3"];
 navBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// cta
+const header1 = document.querySelector("h1");
+header1.textContent = siteContent["cta"]["h1"]
+
+const button1 = document.querySelector("button");
+button1.textContent = siteContent["cta"]["button"];
